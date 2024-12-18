@@ -4,10 +4,6 @@ import Loader from '@components/Loader.vue';
 import cerfImg from '@assets/img/cerf.jpg';
 import heloImg from '@assets/img/helo.jpg';
 import shoesImg from '@assets/img/shoes.jpg';
-import contactFB from '@assets/img/contact/fb.svg';
-import contactIG from '@assets/img/contact/ig.svg';
-import contactT from '@assets/img/contact/tel.svg';
-import contactM from '@assets/img/contact/mail.svg';
 import Social from '@components/Social.vue'; 
 
 const options = {
@@ -15,7 +11,7 @@ const options = {
   anchors: ['hero', 'artefact', 'custom', 'creativite', 'envie', 'contact', 'footer'],
   showActiveTooltip: true,
   navigation: true,
-  browserHistory: false,
+  recordHistory: false,
   onLeave: (origin, destination, direction) => {
     document.documentElement.style.setProperty("--fp-nav-color", destination.item.dataset.navCol ? destination.item.dataset.navCol : "#132d46");
     destination.item.classList.add("actived");
